@@ -56,6 +56,9 @@ export default function ProposalsListComponent() {
 
   return (
     <div>
+      <h1>
+        Ballot
+      </h1>
       {
         getProposals()
       }

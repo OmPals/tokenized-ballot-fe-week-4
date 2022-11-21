@@ -22,7 +22,7 @@ export default function MyTokenComponent() {
       .totalSupply()
       .then((value: BigNumber) => {
         console.log(value.toString());
-        setData(value.toString());
+        setData(ethers.utils.formatEther(value));
         setLoading(false);
       })
       .catch((err: any) => console.log(err));
@@ -31,7 +31,7 @@ export default function MyTokenComponent() {
 
   return (
     <div>
-      <div>Total Supply: {data}</div>
+      <h1>Total Supply: {data}</h1>
       <p>Loading: {loading.toString()}</p>
     </div>
   );
