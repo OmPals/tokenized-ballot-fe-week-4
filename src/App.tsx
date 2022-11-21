@@ -1,5 +1,6 @@
 import './App.css';
 import DelegateVoteForm from './components/DelegateVoteForm';
+import HeaderComponent from './components/HeaderComponent';
 import MyTokenComponent from './components/MyTokenComponent';
 import ProposalsListComponent from './components/ProposalsListComponent';
 import TransferMTKForm from './components/TransferMTKForm';
@@ -14,15 +15,7 @@ function App() {
     <div className="App">
       <WalletContextProvider>
         <MTKContextProvider>
-          <header className="App-header">
-            <h1>Tokenized Ballot</h1>
-            <WalletComponent />
-          </header>
-          {/* <VoterComponent />
-          <ProposalsListComponent />
-          <MyTokenComponent />
-          <TransferMTKForm />
-          <DelegateVoteForm /> */}
+          <HeaderComponent />
           <RouterComponent />
         </MTKContextProvider>
       </WalletContextProvider>

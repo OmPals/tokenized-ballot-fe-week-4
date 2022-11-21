@@ -23,10 +23,10 @@ export default function WalletComponent() {
           IsConnected: true,
           Signer: signer
         });
-        
+
         const address = await walletContext?.signer?.Signer.getAddress();
         console.log(address);
-        
+
         setbtnText(address);
       } else {
       }
@@ -36,9 +36,10 @@ export default function WalletComponent() {
 
   return (
     <div>
-      Click here everytime you connect new Wallet
-      <br />
-      <button onClick={connectWeb3}>Address: {btnText}</button>
+      <p>
+        Click the button below everytime you connect new Wallet <br />
+        <button onClick={connectWeb3}>Address: {btnText}</button>
+      </p>
     </div>
   );
 }
