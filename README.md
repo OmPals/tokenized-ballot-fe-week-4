@@ -1,46 +1,26 @@
-# Getting Started with Create React App
+# Tokenized Ballot Front End Application: 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Gets details about the MyToken contract. For the time being, we only have total supply of tokens
 
-## Available Scripts
+![1](https://user-images.githubusercontent.com/35599492/203167741-963b4cd8-f244-45b7-b9a4-8a801ab6cb17.jpg)
 
-In the project directory, you can run:
+- A form that calls a backend api of minter backend project, that simply creates a token request
 
-### `yarn start`
+![2](https://user-images.githubusercontent.com/35599492/203167760-9db67956-dc67-454c-a1ce-2b08eb93158e.jpg)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- A form that calls a backend api for minter backend project, that mints MTKs to a given wallet address
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![3](https://user-images.githubusercontent.com/35599492/203167901-9a5c3ba2-3470-4640-8363-637d23147182.jpg)
 
-### `yarn test`
+- A form that interacts with the network to transfer certain MTKs to provided address
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![4](https://user-images.githubusercontent.com/35599492/203167944-8be58468-bb5b-40e8-9fd3-70f7cc31c7ae.jpg)
 
-### `yarn build`
+- A form that interacts with the network to delegate all MTKs to provided address, which simply means delegating the whole voting power of own self
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![5](https://user-images.githubusercontent.com/35599492/203167993-b495a839-4da3-4a5d-8345-4b152c3bf393.jpg)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Displays Voting power of the voter and lets the voter vote with MTKs to the given proposals.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![6](https://user-images.githubusercontent.com/35599492/203168049-4dbea27a-b8a6-4a1b-9b30-f8909a302f02.jpg)
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!** 
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
