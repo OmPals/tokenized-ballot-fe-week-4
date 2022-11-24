@@ -11,8 +11,6 @@ export default function WalletComponent() {
     const { ethereum } = window;
     if (ethereum) {
       const provider = new ethers.providers.Web3Provider(ethereum)
-
-      // MetaMask requires requesting permission to connect users accounts
       await provider.send("eth_requestAccounts", []);
       const signer = provider.getSigner();
 

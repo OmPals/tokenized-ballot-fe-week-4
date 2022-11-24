@@ -1,5 +1,5 @@
 import { BigNumber, Contract, ethers } from 'ethers';
-import React, { useEffect, useState, useContext } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import { WalletContext } from '../context/WalletContext';
 import tkbJson from '../artifacts/contracts/TokenizedBallot.sol/TokenizedBallot.json';
 
@@ -10,7 +10,6 @@ export default function VoterComponent() {
 
   useEffect(() => {
     if (walletContext) {
-      // const provider = ethers.providers.getDefaultProvider('goerli');
       const tkBallot = new Contract("0x6F8Bea9B74f4E4a3328E2eA776D37c92E5Ede7Bb", tkbJson.abi,
         walletContext.signer?.Signer.provider);
       walletContext.signer?.Signer.getAddress().then((value: string) => {
