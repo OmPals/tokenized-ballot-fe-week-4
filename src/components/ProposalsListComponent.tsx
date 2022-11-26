@@ -3,6 +3,7 @@ import { useEffect, useState, useContext } from 'react';
 import { WalletContext } from '../context/WalletContext';
 import tkbJson from '../artifacts/contracts/TokenizedBallot.sol/TokenizedBallot.json';
 import ProposalComponent from './ProposalComponent';
+import VoterComponent from './VoterComponent';
 
 type Proposal = {
   name: string,
@@ -59,6 +60,7 @@ export default function ProposalsListComponent() {
       <h1>
         Ballot
       </h1>
+      <VoterComponent />
       {
         getProposals()
       }

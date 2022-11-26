@@ -31,7 +31,7 @@ export default function VoterComponent() {
 
   return (
     <div>
-      Your Voting Power: {btnText}
+      Your Voting Power: <b>{btnText}</b>
     </div>
   );
 }
